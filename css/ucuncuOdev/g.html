@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style>
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+    /* HTML5 display-role reset for older browsers */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+
+    }
+
+    body {
+        line-height: 1;
+        background-color: #202124;
+        font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+        height: 100vh;
+    }
+
+    ol,
+    ul {
+        list-style: none;
+    }
+
+    blockquote,
+    q {
+        quotes: none;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: "";
+        content: none;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    nav {
+        height: 48px;
+    }
+
+    #navbar {
+        float: right;
+        margin-top: 12px;
+    }
+
+    #first {
+        display: inline-block;
+        padding-right: 15px;
+
+    }
+
+    #second {
+        display: inline-block;
+        overflow: visible;
+        margin-right: 6px;
+    }
+
+    svg {
+        height: 16px;
+        width: 16px;
+        color: white;
+        position: relative;
+        top: 3px;
+
+
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+    }
+
+    #login {
+        padding: 15px;
+        background-color: #93BAF9;
+        color: black;
+        border: 0.8px;
+        height: 35.5px;
+        width: 120px;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 8px;
+        border-radius: 4px;
+        display: inline-block;
+        box-sizing: border-box;
+        position: relative;
+        top: 4.8px;
+
+
+    }
+
+    img {
+
+        height: 92px;
+        max-height: 227px;
+
+    }
+
+    section {
+        margin: auto;
+    }
+
+    #middle {
+        display: inline-block;
+        width: 100vw;
+        height: 40%;
+        position: relative;
+        top: 150px;
+    }
+
+    #middle-center {
+        text-align: center;
+        width: min-content;
+        margin: 0 auto;
+    }
+
+    #logo {
+
+
+        margin: 0 auto;
+    }
+
+    #search {
+        display: flex;
+        width: 580px;
+        border: 1px solid;
+        border-color: #303134;
+
+        height: 44px;
+        max-height: 580px;
+        border-radius: 22px;
+        margin: 20px;
+    }
+
+    #search:hover {
+        background-color: #303134;
+    }
+
+    #insearch {
+        margin: 0 15px;
+        width: 100%;
+    }
+
+    .searchbtn {
+        background-color: #303134;
+        border: 0;
+        color: white;
+        height: 36px;
+        border-radius: 3px;
+        width: 215px;
+    }
+
+    .hov:hover {
+        text-decoration: underline;
+    }
+
+    #p {
+        position: relative;
+        top: 85px;
+    }
+
+    .footer {
+
+        position: absolute;
+
+        bottom: 0;
+        
+    }
+
+    .foot {
+        padding-left:30px ;
+        background-color: #171717;
+        align-content: center;
+        height: 45px;
+        padding: 0 30px;
+        width: 100vw;
+        
+
+
+    }
+
+    .span {
+        padding: 15px 7px;
+
+        
+    }
+
+    .centerFoot {
+        text-align:center;
+    }
+
+    .rightFoot {
+        float: right;
+    }
+</style>
+
+<body>
+    <nav>
+        <div id="navbar">
+            <div id="first">
+                <a class="hov" style="padding: 15px;" href="https://mail.google.com/mail/&ogbl">Gmail</a>
+                <a class="hov" href="https://www.google.com.tr/imghp?hl=tr&ogbl">Görseller</a>
+            </div>
+            <div id="second">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z" />
+                    </svg></a>
+                <a id="login" href="">Oturum açın</a>
+            </div>
+        </div>
+    </nav>
+    <div id=middle>
+
+        <div id="middle-center">
+            <a id="logo"> <img
+                    src="https://www.google.com.tr/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png"
+                    alt="" /> </a>
+            <form>
+                <div id="search">
+                    <div id="insearch">
+                        <svg style="margin-top:12px" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                            </path>
+                        </svg>
+                        <input type="text"
+                            style=" height: 30px; ;width: 89%;background-color: inherit;border: 0;"></input>
+                        <img style="height: 28px; float: right; margin-top: 9px; margin-left: 4px;"
+                            src="https://img.icons8.com/emoji/48/000000/keyboard-emoji.png" />
+                        <!-- p butonların üzerinde oluşuyor?-->
+                        <p id="p">Google'ı kullanabileceğiniz diğer diller: <a href="#">English</a></p>
+
+                    </div>
+
+                </div>
+                <div>
+                    <input class="searchbtn" style="margin-right: 6px;" type="submit" value="Google'da Ara"></input>
+                    <input class="searchbtn" type="submit" value="Kendimi Şanslı Hissediyorum"></input>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="foot"><span class="span">Türkiye</span></div>
+        <div class="foot">
+            <span class="leftFoot"> <span class="span">Hakkında</span><span class="span">Reklam</span><span class="span">İşletme</span><span class="span">Arama nasıl
+                    çalışır?
+                </span></span>
+
+
+            <span class="centerFoot" >2007'den bugüne karbon nötr</span>
+
+
+            <span class="rightFoot">
+                <span class="span">Gizlilik</span><span class="span">Şartlar</span><span class="span">Ayarlar</span></span>
+
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
