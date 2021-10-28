@@ -1,1 +1,1 @@
-![GitHub Logo](/opp/1odev.png)
+![](/opp/1odev.png)
