@@ -7,5 +7,5 @@
 - 3<7 3<5 3>1 => 1'in sağına yazılır
 - .
 - .
-- .
-  ![](binary.png)
+- .  
+![](binary.png)
