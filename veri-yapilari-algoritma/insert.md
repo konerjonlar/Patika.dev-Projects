@@ -10,7 +10,7 @@
 
 **O($6^2$)=36**
 
-**3) Time Complexity: Average case: Aradığımız sayının ortada olması,Worst case: Aradığımız sayının sonda olması, Best case: Aradığımız sayının dizinin en başında olması.**
+**3)  Time Complexity: Average case: Aradığımız sayının ortada olması  Worst case: Aradığımız sayının sonda olması  Best case: Aradığımız sayının dizinin en başında olması.**
 
 **Best case:** Array'in sıralı olması.
 
